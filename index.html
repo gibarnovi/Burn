@@ -335,19 +335,19 @@
     }
   </style>
 </head>
-<body data-density="compact">
+<body data-density="compact" data-theme="light">
   <main class="card" aria-labelledby="title">
     <header class="header">
       <div class="title-row">
         <div>
           <h1 id="title">NBG Exchange Rates</h1>
-          <p class="subtitle" id="theme-subtitle">Live USD / EUR · ღამე</p>
+          <p class="subtitle" id="theme-subtitle">Live USD / EUR · დღე</p>
         </div>
 
         <div class="controls">
-          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode" aria-pressed="false">
-            <span class="theme-icon" id="theme-icon" aria-hidden="true">🌙</span>
-            <span id="theme-label">ღამე</span>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="true">
+            <span class="theme-icon" id="theme-icon" aria-hidden="true">☀️</span>
+            <span id="theme-label">დღე</span>
           </button>
 
           <div class="density-toggle" role="group" aria-label="Table density">
@@ -573,7 +573,7 @@
       dom.compactBtn.addEventListener('click', () => setDensity('compact'));
       dom.comfortableBtn.addEventListener('click', () => setDensity('comfortable'));
       dom.themeToggle.addEventListener('click', toggleTheme);
-      setTheme('dark');
+      setTheme('light');
       setDensity('compact');
       refreshCycle();
     })();
